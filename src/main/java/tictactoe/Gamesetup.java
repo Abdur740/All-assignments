@@ -23,7 +23,8 @@ class Gamesetup{
                 sb.append(arr[i][j]+" | ");
             }
             sb.append("\n");
-        }log.info(""+sb);
+        }String print1 = " "+sb;
+        log.info(print1);
     }
     void playgame(){
         log.info("Enter 'x' or 'o' in the rows and columns to play.\n");
