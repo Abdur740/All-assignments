@@ -3,6 +3,7 @@ package dbconnection;
 import java.util.logging.Logger;
 
 class Dbconnection{
+protected Dbconnection(){}
     static int status = 0;
     
     public static final Logger LOGGER = Logger.getLogger("InfoLogging");
