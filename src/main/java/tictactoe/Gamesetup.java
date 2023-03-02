@@ -13,6 +13,8 @@ class Gamesetup{
     String row1="";
     String row2="";
     String row3="";
+    String playerX = "Player x wins!";
+    String playerO = "Player o wins!";
   
     Gamesetup(){
         char value = 49;
@@ -23,8 +25,7 @@ class Gamesetup{
                 sb.append(arr[i][j]+" | ");
             }
             sb.append("\n");
-        }String print1 = " "+sb;
-        log.info(print1);
+        }log.info(""+sb);
     }
     void playgame(){
         log.info("Enter 'x' or 'o' in the rows and columns to play.\n");
@@ -46,6 +47,7 @@ void verticalcheck()
     String col1 = "";
     String col2 = "";
     String col3 = "";
+    
     for(int i=0;i < 3;i++){
         for(int j=0;j<3;j++){
             if(i==0){
@@ -58,19 +60,19 @@ void verticalcheck()
                 col3 = col3+arr[j][i];
             }
         }if(col1.equals("xxx")){
-            log.info("Player x wins!");
+            log.info(playerX);
         }else if(col1.equals("ooo")){
-            log.info("Player o wins!");
+            log.info(playerO);
         }
         if(col2.equals("xxx")){
-            log.info("Player x wins!");
+            log.info(playerX);
         }else if(col2.equals("ooo")){
-            log.info("Player o wins!");
+            log.info(playerO);
         }
         if(col3.equals("xxx")){
-            log.info("Player x wins!");
+            log.info(playerX);
         }else if(col3.equals("ooo")){
-            log.info("Player o wins!");
+            log.info(playerO);
         }
         col1 = "";
         col2 = "";
@@ -90,19 +92,19 @@ void verticalcheck()
                     row3 = row3+arr[i][j];
                 }
             }if(row1.equals("xxx")){
-                log.info("Player x wins!");
+                log.info(playerX);
             }else if(row1.equals("ooo")){
-                log.info("Player o wins!");
+                log.info(playerO);
             }
             if(row2.equals("xxx")){
-                log.info("Player x wins!");
+                log.info(playerX);
             }else if(row2.equals("ooo")){
-                log.info("Player o wins!");
+                log.info(playerO);
             }
             if(row3.equals("xxx")){
-                log.info("Player x wins!");
+                log.info(playerX);
             }else if(row3.equals("ooo")){
-                log.info("Player o wins!");
+                log.info(playerO);
             }
             row1 = "";
             row2 = "";
@@ -132,16 +134,16 @@ void verticalcheck()
             }
             if(dia1.equals("xxx"))
             {
-             log.info("\nx wins!");
+             log.info(playerX);
             }
             else if(dia1.equals("ooo")){
-                log.info("o wins!");
+                log.info(playerO);
             }
             if(dia2.equals("xxx"))
             {
-             log.info("\nx wins!");
+             log.info(playerX);
             }else if(dia2.equals("ooo")){       
-            log.info("\no wins!");
+            log.info(playerO);
             }
         }
     }
@@ -151,8 +153,9 @@ void verticalcheck()
             for(int j = 0; j < 3; j++) {
                 sb.append(arr[i][j]+" | ");
             }
-            sb.append("\n");
-        }String print = " "+sb;
+            sb.append("\n");    
+        }
+        String print = " "+sb;
         log.info(print);
     }
 }
