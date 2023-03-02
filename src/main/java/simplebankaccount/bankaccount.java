@@ -5,6 +5,7 @@ import java.util.logging.Logger;
 import java.util.Scanner;
 
 public class bankaccount {
+protected bankaccount(){}
     private static final Logger LOGGER = Logger.getLogger(Logger.GLOBAL_LOGGER_NAME);
     public static void start() {
        SimpleBankAcc user = new SimpleBankAcc();
