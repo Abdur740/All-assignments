@@ -4,7 +4,7 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 import java.util.Scanner;
 
-public class bankaccount {
+public class Bankaccount {
 protected bankaccount(){}
     private static final Logger LOGGER = Logger.getLogger(Logger.GLOBAL_LOGGER_NAME);
     public static void start() {
