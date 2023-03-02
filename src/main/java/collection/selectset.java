@@ -1,14 +1,18 @@
 package collection;
 import java.util.Scanner;
+import java.util.logging.Logger;
 
 
 public class selectset{
+
 protected selectset(){}
+private static final Logger log = Logger.getLogger("InfoLogging");
 	public static void start(){
+	
 		Scanner sc = new Scanner(System.in);
 		int option;
 		do{
-		System.out.println("1. Hashmap \n2. Hashset\n3. Treeset\n4. Exit");
+		Logger.info("1. Hashmap \n2. Hashset\n3. Treeset\n4. Exit");
 		option =  sc.nextInt();
 		switch(option){
 			case 1:
