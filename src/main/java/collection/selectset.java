@@ -27,6 +27,8 @@ private static final Logger log = Logger.getLogger("InfoLogging");
 			//Treeset
 			Treeset.starttreeset();
 			break;	
+			default:
+			break;
 			}
 		}while(option!=4);
 	
