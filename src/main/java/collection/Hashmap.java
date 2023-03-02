@@ -4,6 +4,7 @@ import java.util.HashMap;
 import java.util.logging.Logger;
 
 public class Hashmap {
+protected Hashmap(){}
     public static void starthashmap()
     {
         Logger log=Logger.getLogger("com-api-jar");
@@ -17,7 +18,7 @@ public class Hashmap {
         map1.put(6,"Jeeva");
         map1.put(7,"hari");
         map1.put(8,"hari");
-        System.out.println(map1);
+        logger.info(map1);
         logger.info(map1.get(7));
         String res = "Cloned hashmap"+map1.clone();
         log.info(res);
