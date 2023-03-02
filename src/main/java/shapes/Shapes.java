@@ -4,6 +4,7 @@ import java.util.Scanner;
 import java.util.logging.Logger;
 
 public class Shapes {
+protected Shapes(){}
     private static final Logger LOGGER = Logger.getLogger("InfoLogging");
     public static void start() {
         int option;
