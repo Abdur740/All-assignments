@@ -3,7 +3,7 @@ import java.util.Scanner;
 import java.util.logging.Logger;
 
 
-public class selectset{
+public class Selectset{
 
 protected selectset(){}
 private static final Logger log = Logger.getLogger("InfoLogging");
