@@ -4,6 +4,7 @@ import java.util.TreeSet;
 import java.util.logging.Logger;
 
 public class Treeset {
+protected Treeset(){}
     private static final Logger log = Logger.getLogger("InfoLogging");
     public static void starttreeset() {
             TreeSet<String> name = new TreeSet<String>();
