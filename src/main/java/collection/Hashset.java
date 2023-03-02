@@ -5,6 +5,7 @@ import java.util.Scanner;
 import java.util.logging.Logger;
 
 public class Hashset {
+protected Hashset(){}
     private static final Logger log = Logger.getLogger("InfoLogging");
     public static void starthashset() {
         Scanner sc=new Scanner(System.in);
