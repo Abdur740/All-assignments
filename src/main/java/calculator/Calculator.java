@@ -7,6 +7,9 @@ import java.util.Scanner;
 import java.util.logging.Logger;
 
 public class Calculator{
+    protected Calculator(){
+
+    }
     private static final Logger log = Logger.getLogger("InfoLogging");
     public static void start() {
         Scanner sc = new Scanner(System.in);  
