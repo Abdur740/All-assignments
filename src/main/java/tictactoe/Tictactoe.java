@@ -2,6 +2,9 @@ package tictactoe;
 
 public class Tictactoe{
     public static void start() {
+        protected start(){
+        
+        }
         int playertime = 0;
         Gamesetup gs = new Gamesetup();
         do{
