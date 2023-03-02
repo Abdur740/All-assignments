@@ -16,6 +16,7 @@ import java.util.Comparator;
 import java.util.logging.Logger;
 
 public class Studenttest{
+protected Studenttest(){}
     public static final Logger LOGGER = Logger.getLogger("InfoLogging");
     public static void start() {
         ArrayList<Student> sdlist = new ArrayList<Student>();
