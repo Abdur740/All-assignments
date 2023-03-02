@@ -8,6 +8,7 @@ import java.util.Scanner;
 import java.util.logging.Logger;
 
 public class Student{
+protected Student(){}
     public static final Logger LOGGER = Logger.getLogger("InfoLogging");
     public static void start() {
         Scanner sc =  new Scanner(System.in);
