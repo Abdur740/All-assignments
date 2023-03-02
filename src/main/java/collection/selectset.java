@@ -3,6 +3,7 @@ import java.util.Scanner;
 
 
 public class selectset{
+protected selectset(){}
 	public static void start(){
 		Scanner sc = new Scanner(System.in);
 		int option;
