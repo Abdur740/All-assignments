@@ -1,41 +1,40 @@
 package simplebankaccount;
 
-import java.util.logging.Level;
 import java.util.logging.Logger;
 import java.util.Scanner;
 
 public class SimpleBankAcc{
-    private static final Logger LOGGER = Logger.getLogger(Logger.GLOBAL_LOGGER_NAME);
+    private static final Logger log = Logger.getLogger("InfoLogging");
     Scanner sc = new Scanner(System.in);
     String userName;
     long accNumber;
     double balance;
 
     SimpleBankAcc(){
-        LOGGER.log(Level.INFO,"Enter user name: ");
+        log.info("Enter user name: ");
         userName = sc.nextLine();
-        LOGGER.log(Level.INFO,"Enter account number: ");
+        log.info("Enter account number: ");
         accNumber = sc.nextLong();
     }
     void deposit(){
-        LOGGER.log(Level.INFO,"Enter amount to deposit: ");
+        log.info("Enter amount to deposit: ");
         double amt = sc.nextDouble();
-        LOGGER.log(Level.INFO,Double.toString(amt),"Amount credited: "+amt+" INR");
+        log.info(""+Double.toString(amt)+"Amount credited: "+amt+" INR");
         balance += amt;
     }
     void withdrawal(){
-        LOGGER.log(Level.INFO,"Enter amount to withdraw: ");
+        log.info("Enter amount to withdraw: ");
         double withdrawAmt = sc.nextDouble();
         if(withdrawAmt < balance){
             balance-=withdrawAmt;
-            // LOGGER.log(Level.SEVERE,"Amount Withdrawed: "+withdrawAmt);
+            log.info("Amount Withdrawed: "+withdrawAmt);
         }
         else
         {
-            LOGGER.log(Level.INFO,"Insufficient funds, try again.");
+            log.info("Insufficient funds, try again.");
         }
     }
     void checkBalance(){
-        LOGGER.log(Level.INFO,"Your balance is "+balance+" INR");
+        log.info("Your balance is "+balance+" INR");
     }
 }
