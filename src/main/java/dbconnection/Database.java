@@ -10,6 +10,7 @@ import java.util.Scanner;
 import java.util.logging.Logger;
 
 public class Database{
+protected Database(){}
    public static final Logger LOGGER = Logger.getLogger("InfoLogging");
     public static void start() {
         
