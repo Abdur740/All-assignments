@@ -151,6 +151,7 @@ void verticalcheck()
                 sb.append(arr[i][j]+" | ");
             }
             sb.append("\n");
-        }log.info(""+sb);
+        }String print = " "+sb;
+        log.info(print);
     }
 }
