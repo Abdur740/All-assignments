@@ -6,6 +6,7 @@ import java.util.Map.Entry;
 import java.util.logging.Logger;
 
 public class FileReader{
+protected FileReader(){}
     private static final Logger LOGGER =  Logger.getLogger("InfoLogging");
 
     static StringBuilder print = new StringBuilder("");
