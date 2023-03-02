@@ -1,6 +1,7 @@
 package main;
 import java.io.IOException;
 import java.util.Scanner;
+import java.util.logging.Logger;
 
 import basiccreditcard.creditcard;
 import calculator.Calculator;
@@ -17,11 +18,12 @@ import studenttest.Studenttest;
 import tictactoe.Tictactoe;
 
 public class App{
+private static final Logger log = Logger.getLogger("InfoLogging");
     public static void main(String[] args)throws CloneNotSupportedException, IOException {
     Scanner sc = new Scanner(System.in);
     int option;
     do{
-        System.out.println("Select option: \n1. Basic credit card \n2. Calculator \n3. Collection \n4. Contacts using linked list \n5. Co ordinates \n6. Db connection \n7. Ds collection \n8. File Reader \n9. Shapes \n10. simple Bank Account \n11. Student GPA calculator \n12. Student Test \n13. Tic Tac Toe\n14. Exit\nEnter option: ");
+        log.info("Select option: \n1. Basic credit card \n2. Calculator \n3. Collection \n4. Contacts using linked list \n5. Co ordinates \n6. Db connection \n7. Ds collection \n8. File Reader \n9. Shapes \n10. simple Bank Account \n11. Student GPA calculator \n12. Student Test \n13. Tic Tac Toe\n14. Exit\nEnter option: ");
         option = sc.nextInt();
         switch(option){
         case 1:
@@ -64,7 +66,9 @@ public class App{
         Tictactoe.start();
         break;
         case 14:
-        System.out.println("exit");
+        log.info("exit");
+        break;
+        default;
         break;
         }
     }while(option!=14);
