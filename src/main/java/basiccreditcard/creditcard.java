@@ -4,7 +4,9 @@ import java.util.logging.Logger;
 
 
 public class creditcard {
-
+    protected creditcard(){
+    
+    }
     private static final Logger LOGGER = Logger.getLogger("InfoLogging");
     public static void start() throws CloneNotSupportedException{
         String cardholdername;
