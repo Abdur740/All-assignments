@@ -8,7 +8,7 @@ package coordinates;
 import java.util.Scanner;
 import java.util.logging.Logger;
 
-public class application{
+public class Application{
 private application(){}
     public static final Logger LOGGER = Logger.getLogger("IndoLogging");
     public static void start()throws CloneNotSupportedException { 
