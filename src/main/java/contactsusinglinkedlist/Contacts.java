@@ -4,6 +4,7 @@ import java.util.logging.Logger;
 import java.util.Scanner;
 
 public class Contacts{
+private Contacts(){}
     private static final Logger log = Logger.getLogger("InfoLogging");
     public static void start() {
         Scanner sc = new Scanner(System.in);
