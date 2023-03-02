@@ -19,7 +19,8 @@ public class SimpleBankAcc{
     void deposit(){
         log.info("Enter amount to deposit: ");
         double amt = sc.nextDouble();
-        log.info(""+Double.toString(amt)+"Amount credited: "+amt+" INR");
+        String print = ""+Double.toString(amt)+"Amount credited: "+amt+" INR";
+        log.info(print);
         balance += amt;
     }
     void withdrawal(){
@@ -27,7 +28,8 @@ public class SimpleBankAcc{
         double withdrawAmt = sc.nextDouble();
         if(withdrawAmt < balance){
             balance-=withdrawAmt;
-            log.info("Amount Withdrawed: "+withdrawAmt);
+            String print1 = "Amount Withdrawed: "+withdrawAmt;
+            log.info(print1);
         }
         else
         {
@@ -35,6 +37,7 @@ public class SimpleBankAcc{
         }
     }
     void checkBalance(){
-        log.info("Your balance is "+balance+" INR");
+        String print3 = "Your balance is "+balance+" INR";
+        log.info(print3);
     }
 }
