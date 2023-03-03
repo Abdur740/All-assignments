@@ -1,7 +1,7 @@
 package tictactoe;
 
 public class Tictactoe{
-    private Tictactor(){}
+    protected Tictactor(){}
     public static void start() {
         Gamesetup gf=new Gamesetup();
         gf.gameBoard();
